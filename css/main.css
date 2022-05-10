@@ -16,15 +16,14 @@ body{
     /* background-color: var(--color-secondary); */
    
 }
-h1,h2,h3{
+h1,h2,h3,h4,p,figure,ul,ol{
     font-weight: 400;
-    margin: 0;
-}
-p,figure,ul,ol{
+    margin: 0;    
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -111,8 +110,8 @@ nav ul li:hover a{
 }
 /* main */
 main{
-    margin-top: 3rem;
-    padding: 7.5rem 0;
+    margin-top: 15rem;
+
 }
 main section{
     font-size: 0;
@@ -237,3 +236,32 @@ footer .mail, footer .phone{
     width: 80rem;
     font-size: 2rem;
 }
+@media screen and (max-width:70.0rem){
+    main{
+      padding-top: 9.0rem; /* 90px */
+    }
+    main, footer{
+      max-width: 100rem;
+      margin: 3rem;
+    }
+    
+   main{
+     display: block;
+     width: 100%;
+   }  
+   .grid-picture{
+  
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+  
+  }
+  @media screen and (orientation: landscape){
+    
+   .theme-gallery{
+  
+    grid-template-columns: repeat(5, 1fr);
+  
+  }
+  
+  }
