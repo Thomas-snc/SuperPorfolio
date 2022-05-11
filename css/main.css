@@ -13,15 +13,18 @@ body{
     margin: 0;
     line-height: 1.6;
     color: #fff; 
-    /* background-color: var(--color-secondary); */
-   
+
 }
+
+    /* background-color: var(--color-secondary); */
+
 h1,h2,h3,h4,p,figure,ul,ol{
     font-weight: 400;
     margin: 0;    
     margin: 0;
     padding: 0;
     list-style: none;
+    color: var(--color-default);
 }
 *{
     box-sizing: border-box;
@@ -32,9 +35,9 @@ a{
 }
 img{
     display: inline-block;
-    height: 100%;
-    width: 100%;
-    vertical-align: middle;
+    height: 50%;
+    width: 50%;
+
     object-fit: cover;
 }
 button{
@@ -104,14 +107,26 @@ nav ul li a{
     width: 100%;
     color: #fff;
     text-align: center;
-    transition: all .6s ease-in-out;
 }
 
 /* main */
+.site{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    
+}
+
 main{
     margin-top: 15rem;
-
 }
+
+figure img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main section{
     max-width: 120rem;
     background-color: #fafafa;
@@ -129,11 +144,12 @@ main section h2{
     margin-bottom: 0 auto;
 
 }
-main section article{
+
+main .theme-gallery article{
     font-size: initial;
     display: inline-block;
-    width: calc(100% / 4 - .1rem);
-    margin: 1rem auto;
+    
+    width: calc(100% / 4 - 1rem);
     text-align: center;
     background-color: rgba(255,255,255,0.9);
     color:var(--color-default);
@@ -151,7 +167,7 @@ main section article h3{
 main .theme-gallery ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-radius: .5rem;
+    border-radius: 5rem;
     gap: 1rem;
 }
 
@@ -165,7 +181,6 @@ main .theme-gallery figure{
 
 main .theme-gallery ul li figure figcaption{
     display: block;
-
     bottom: 50%;
     transform: translateY(50%);
     left: 0;
@@ -178,6 +193,9 @@ main .theme-gallery ul li figure figcaption{
     text-align: center;
    
 }
+
+
+/* Download */
 main .theme-download-button{
     background-color: var(--color-default);
     padding: 1rem;
