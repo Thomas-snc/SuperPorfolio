@@ -23,7 +23,6 @@ h1,h2,h3,h4,p,figure,ul,ol{
     padding: 0;
     list-style: none;
 }
-
 *{
     box-sizing: border-box;
 }
@@ -33,8 +32,8 @@ a{
 }
 img{
     display: inline-block;
-    width: 100%;
     height: 100%;
+    width: 100%;
     vertical-align: middle;
     object-fit: cover;
 }
@@ -76,7 +75,10 @@ header{
     width: 100%;
     background-color: var(--color-default);
     z-index: 4;
-    
+}
+nav ul li:hover a{
+    background-color: var(--color-last-bg);
+    color: #222;
 }
 header h1, :is(nav){
     display: inline-block;
@@ -104,17 +106,13 @@ nav ul li a{
     text-align: center;
     transition: all .6s ease-in-out;
 }
-nav ul li:hover a{
-    background-color: var(--color-last-bg);
-    color: #222;
-}
+
 /* main */
 main{
     margin-top: 15rem;
 
 }
 main section{
-    font-size: 0;
     max-width: 120rem;
     background-color: #fafafa;
     margin: 1rem auto;
@@ -140,12 +138,15 @@ main section article{
     background-color: rgba(255,255,255,0.9);
     color:var(--color-default);
 }
+
+main section article p{
+    text-align: start;
+}
+
 main section article h3{
     text-transform: uppercase;
     font-size: 2rem;
-    
 }
-
 
 main .theme-gallery ul{
     display: grid;
@@ -153,16 +154,18 @@ main .theme-gallery ul{
     border-radius: .5rem;
     gap: 1rem;
 }
+
 main .theme-gallery ul li img{
     border-radius: .5rem;
+    align-items: center;
 }
 main .theme-gallery figure{
     position: relative;
-    
 }
+
 main .theme-gallery ul li figure figcaption{
     display: block;
-    position: absolute;
+
     bottom: 50%;
     transform: translateY(50%);
     left: 0;
@@ -199,7 +202,7 @@ main .theme-download-button button{
 }
 /* 100 screen */
 main, footer{
-    min-height: 100vh;
+    min-height: 120rem;
 }
 footer{
     text-align: center;
@@ -220,7 +223,6 @@ footer section h2{
     text-align: center;
     line-height: 4.5rem;
     padding-bottom: 1rem;
-   
 }
 footer section h2::before{
     position: absolute;
@@ -265,3 +267,4 @@ footer .mail, footer .phone{
   }
   
   }
+  
