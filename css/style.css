@@ -237,3 +237,8 @@ footer .mail, footer .phone{
     width: 80rem;
     font-size: 2rem;
 }
+@media screen and (max-width: 70rem) {
+    header{
+        po
+    }
+}
