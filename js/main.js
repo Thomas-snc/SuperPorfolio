@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", e => {
     e.preventDefault();
     let button = document.querySelector("main section.theme-download-button button");
